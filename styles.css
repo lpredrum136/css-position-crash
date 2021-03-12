@@ -1,0 +1,33 @@
+.parent {
+  position: relative;
+  /* position: absolute; */
+  height: 200vh;
+}
+
+.child-one {
+  /* RELATIVE */
+  /* position: relative; */ /* relative k co top left etc === static */
+  /* top: 20px; */ /* thong thuong k ai de top, left, etc khi su dung position relative, 
+  vi no se nhac ca cai div ra va position lung tung tren man hinh, so voi vi tri static cua no */
+  /* left: 20px; */
+
+  /* ABSOLUTE */
+  /* position: absolute; */ /* absolute gan nhu delete the element from the page, all other elements ignore it completely, good for sticking something and nothing else is moved around it */
+  /* absolute needs something to "be absolute to", so it looks for some parent element, so parent element needs position: something different to static */
+  /* top: 0; */
+
+  /* FIXED */
+  /* position: fixed; */ /* fixed to the whole html viewport, nothing to do with parent, stay fixed even when you scroll*/
+  /* top: 0; */
+  /* right: 0; */
+
+  /* STICKY */
+  position: sticky; /* mixed giua relative va fixed, binh thuong nhin k thay gi, nhung neu scroll outside of the page, thi se bien thanh fixed */
+  top: 0;
+}
+
+.child-two {
+}
+
+.child-three {
+}
