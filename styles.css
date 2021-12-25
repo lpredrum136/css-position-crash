@@ -8,12 +8,14 @@
   /* RELATIVE */
   /* position: relative; */ /* relative k co top left etc === static */
   /* top: 20px; */ /* thong thuong k ai de top, left, etc khi su dung position relative, 
-  vi no se nhac ca cai div ra va position lung tung tren man hinh, so voi vi tri static cua no */
+  vi no se nhac ca cai div ra va position lung tung tren man hinh, SO voi vi tri static cua no */
+  /* nhung element khac van dung nguyen nhu the cai div (position: relative; top: 10px for example) dang co position: static
   /* left: 20px; */
 
   /* ABSOLUTE */
   /* position: absolute; */ /* absolute gan nhu delete the element from the page, all other elements ignore it completely, good for sticking something and nothing else is moved around it */
-  /* absolute needs something to "be absolute to", so it looks for some parent element, so parent element needs position: something different to static */
+  /* absolute needs something to "be absolute to", so it looks for some parent element, so parent element needs position: something different from static */
+  /* if it can't find something in parents with position different from static, it will position itself all the way to html element, which is the whole page
   /* top: 0; */
 
   /* FIXED */
